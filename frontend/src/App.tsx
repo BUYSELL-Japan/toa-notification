@@ -25,12 +25,7 @@ function App() {
     setShowSettings(false);
   };
 
-  const handleLogout = () => {
-    localStorage.removeItem('api_url');
-    setApiUrl('');
-    setTempUrl('');
-    setShowSettings(true);
-  };
+
 
   if (!apiUrl || showSettings) {
     return (
@@ -85,18 +80,19 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 max-w-md mx-auto shadow-2xl min-h-[100dvh]">
+    <div className="min-h-screen bg-gray-50 max-w-4xl mx-auto shadow-2xl min-h-[100dvh] border-x border-gray-100">
       {/* Header */}
-      <header className="bg-white border-b sticky top-0 z-10 px-4 py-3 flex justify-between items-center shadow-sm">
-        <h1 className="font-bold text-lg flex items-center gap-2">
-          <BellRing className="w-5 h-5 text-blue-600" />
+      <header className="bg-white border-b sticky top-0 z-10 px-6 py-4 flex justify-between items-center shadow-sm">
+        <h1 className="font-bold text-xl flex items-center gap-2">
+          <BellRing className="w-6 h-6 text-blue-600" />
           Notification Center
         </h1>
         <button
           onClick={() => setShowSettings(true)}
-          className="p-2 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-full"
+          className="p-2 text-gray-400 hover:text-blue-600 hover:bg-blue-50 rounded-full transition-colors"
+          title="Settings"
         >
-          <Settings className="w-5 h-5" />
+          <Settings className="w-6 h-6" />
         </button>
       </header>
 

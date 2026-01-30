@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { Notification } from '../types';
-import { MessageSquare, ShoppingBag, Bell, RefreshCw, AlertCircle } from 'lucide-react';
+import type { Notification } from '../types';
+import { ShoppingBag, Bell, RefreshCw, AlertCircle } from 'lucide-react';
 import { formatDistanceToNow } from 'date-fns';
 import { ja } from 'date-fns/locale';
 
