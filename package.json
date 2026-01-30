@@ -4,7 +4,8 @@
   "description": "Shopee Chat Notification to Slack",
   "main": "src/index.ts",
   "scripts": {
-    "deploy": "wrangler deploy"
+    "deploy": "wrangler deploy",
+    "build": "echo 'No build step for worker'"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20240117.0",

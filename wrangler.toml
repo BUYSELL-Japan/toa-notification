@@ -6,6 +6,8 @@ compatibility_date = "2024-01-01"
 # Credentials should be set via Cloudflare Dashboard (Workers > Settings > Variables)
 # SLACK_WEBHOOK_URL
 # SHOPEE_PARTNER_KEY
+# SHOPEE_SHOP_ID
+
 [[d1_databases]]
 binding = "DB"
 database_name = "toa_notifications_db"
